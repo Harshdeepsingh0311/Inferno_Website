@@ -1,0 +1,202 @@
+{% extends 'HOME/basic.html' %}
+{% load static %}
+{% block CSS %}
+ <link rel="stylesheet" href="{% static 'CS/home.css' %}" type="text/css" />
+{% endblock %}
+{% block title %} Home {% endblock %}
+
+{% block inferno %}
+<section class="land">
+	<div class="container">
+	<p class="landing"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+		<div  id="landbutton">
+			<button type="button" class="btn btn-lg " id="launch" ><a href="project/" id="trans">Explore</a></button>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block body %}
+<main>
+
+
+<section>
+	<div class="container">
+<!--		<div class="row">-->
+<!--		<div class="class=col-lg-6 col-md-6 col-sm-6">-->
+			<h1 class="pt-3" style="color:crimson; size:50px;">ABOUT US</h1>
+
+<!--		</div>-->
+<!--			<div class="class=col-lg-6 col-md-6 col-sm-6">-->
+				<p class="firstpara">Team Inferno DTU is a technical team which was founded in September 2013. In 2017, the team reinvented itself,
+redirecting its boundless creativity, technical expertise and experience gained from previous successful ventures, into
+					building rovers for exploring the terrain of Mars, and participating in various rover challenges.</p>
+
+<p class="firstpara">Mars has piqued the interest of mankind ever since the launch of Apollo 11. While manned missions to Mars are yet to be
+realised, manmade rovers are already traversing the surface of Mars. Planetary exploration and unmanned rovers are
+fields with virtually limitless scope for expansion and Team Inferno hopes to push the boundaries of these fields. The path
+to progress is forged by the pursuit of the unknown. With this principle in mind, Team Inferno forayed into the field of
+rovers and robotics, swiftly establishing its mark. While building a rover that could withstand the harsh and unruly
+	climate of Mars seemed like a daunting task at first, Team Inferno was more than up to it.</p>
+
+<p class="firstpara">Robotics is an interdisciplinary branch of engineering and science that includes mechanical engineering, electronics
+engineering, information engineering, computer science, and others. The enormously talented students of Team Inferno
+DTU came together from various disciplines to work in the field of robotics and build the first Martian Rover prototype of
+	Delhi Technological University.</p>
+
+<p class="firstpara">The mechanical team had to implement advance manufacturing techniques to ensure accuracy and durability. The
+electrical team was entrusted with linking all the sub systems present on the rover, while at the same time ensuring high
+accuracy and low latency. The software team worked on the autonomy of the rover, implementing a myriad of
+	technologies and software in the rover, for autonomy, obstacle detection and avoidance.</p>
+<!--			</div>-->
+<!--			</div>-->
+
+		<div class="pb-3" style="height:500px;">
+					<img class="aboutimg" src="media/2rov.jpeg">
+		</div>
+	</div>
+
+</section>
+
+
+
+<section class="competition">
+
+	<h2 class="text-center mt-5 mb-5 pb-2" style="font-size:40px;">Our Competitions</h2>
+
+
+
+
+
+
+	<div class="container">
+
+
+	<div class="row">
+	<div class="col-lg-6 col-md-6 col-sm-6">
+
+
+		<h3>URC</h3>
+		<p class="text-justify">The University Rover Challenge (URC) by the Mars Society is a robotics competition for university level students that challenges teams to design and build a rover that would be of use to early explorers on Mars.[1] The competition is held annually at the Mars Desert Research Station, outside Hanksville, Utah in the United States. The aim of the University Rover Challenge is to encourage students to develop skills in robotics, improve the state-of-the-art in rovers, and work in multi-disciplinary teams with collaboration between scientists and engineers. </p>
+	</div>
+
+
+
+	<div class="col-lg-6 col-md-6 col-sm-6">
+		<iframe width="500" height="280" src="https://www.youtube.com/embed/wOzuoylm0Vk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+
+</div>
+	<div class="row embed">
+	<div class="col-lg-6 col-md-6 col-sm-6">
+
+
+		<h3 class="pt-4">IRC</h3>
+		<p class="text-justify">The International Rover Challenge (formerly Indian Rover Challenge) is an annual robotics competition which features an engineering challenge to engage students worldwide in the next phase of space exploration. IRC is the only robotics and space exploration competition of its kind in Asia-Pacific which aims to ignite and encourage the spirit of innovation amongst budding engineers as they set on a quest to build a space exploration rovers, using their skills and ideas. The competition challenges college students to design and build next-generation Mars Rovers and compete in Mars Simulated conditions.</p>
+	</div>
+
+
+
+	<div class="col-lg-6 col-md-6 col-sm-6">
+		<iframe width="500" height="280" src="https://www.youtube.com/embed/avsaWf6vmFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+
+	</div>
+
+	</div>
+
+
+
+
+
+</section>
+
+
+<section class="pillars">
+
+
+	<div class="container mt-5 mb-5" >
+	<h1 class="text-center text-capitalize pt-5 pb-3">Our Values</h1>
+	<hr class="w-25 mx-auto"></hr>
+	<div class="row mb-5" >
+
+	<div class="col-lg-6 col-md-6 col-12">
+		<div class="card border-0">
+    	<div class="card-body">
+		  <h4 class="card-title text-center">Diligence</h4>
+			 <div class="this1 mb-5 mt-5 fa-5x">
+			  <i class="fas fa-clock"></i>
+			   </div>
+
+			<p class="card-text text-center">The members of team Inferno dedicate a lot of time and effort.</p>
+
+    	</div>
+  	</div>
+
+	</div>
+
+	<div class="col-lg-6 col-md-6 col-12">
+	<div class="card border-0 ">
+    <div class="card-body ">
+		  <h4 class="card-title text-center">Innovation</h4>
+		 <div class="this mb-5 mt-5">
+		  <i class="fas fa-robot fa-5x py-4"></i>
+		 </div>
+
+     	 <p class="card-text text-center">We believe solving problems and are always optimistic about the future</p>
+
+    </div>
+  	</div>
+
+	</div>
+
+	</div>
+
+
+
+
+		<div class="row mb-5 mt-5" >
+		<div class="col-lg-6 col-md-6 col-12">
+		<div class="card border-0">
+    	<div class="card-body">
+     	 <h4 class="card-title text-center">Creativity</h4>
+		  <div class="this3 mb-5 mt-5">
+			<i class="fas fa-lightbulb fa-5x"></i>
+		  </div>
+
+
+      		<p class="card-text text-center">We believe in finding new ways to solve a problem in a more efficient way</p>
+
+    	</div>
+  		</div>
+		</div>
+
+	<div class="col-lg-6 col-md-6 col-12">
+		<div class="card border-0">
+    <div class="card-body">
+      <h4 class="card-title text-center">Knowledge</h4>
+      <div class="this4 mb-5 mt-5">
+
+        <i class="fas fa-square-root-alt fa-5x"></i>
+      </div>
+      <p class="card-text text-center">Inferno is a very healthy learning environment where in every team member is in a state of learning an exchanging information</p>
+
+    </div>
+  	</div>
+
+	</div>
+
+	</div>
+
+	</div>
+
+</section>
+
+</main>
+{% endblock %}
+
+{% block js %}
+ <script src="{% static 'JS/home.js' %}"></script>
+{% endblock %}
