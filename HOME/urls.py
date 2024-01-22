@@ -7,6 +7,7 @@ urlpatterns = [
     path("contact/",views.contact,name='contact'),
     path("urc/",views.urc,name='urc'),
     path("irdc/",views.irdc,name='irdc'),
+    path("irc24/", views.irc, name='irc 2024'),
     path("project/",views.project,name='project'),
     path("sponsor/",views.sponsor,name='sponsor'),
 ]

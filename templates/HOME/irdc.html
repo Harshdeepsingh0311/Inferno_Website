@@ -3,35 +3,77 @@
 {% block CSS %}
  <link rel="stylesheet" href="{% static 'CS/irdc.css' %}" type="text/css" />
 {% endblock %}
-{% block title%}URC{% endblock %}
+{% block title%}IRC 2024{% endblock %}
 {%block dropactive %}active{% endblock %}
+{%block irc24active %}active{% endblock %}
 {% block body %}
   <div class="bg1image">
     <div class="container">
       <div class="bg2image">
     <div id="spacing">
-      <h1 class="display-4 text-center">Indian Rover Challenge</h1>
-      <p class="lead">The Indian Rover Challenge (IRC) is an annual robotics competition which features an engineering challenge to engage students worldwide in the next phase of space exploration. IRC is the only robotics and space exploration competition of its kind in Asia-Pacific which aims to ignite and encourage the spirit of innovation amongst budding engineers as they set on a quest to build a space exploration rovers, using their skills and ideas. The competition challenges college students to design and build next-generation Mars Rovers and compete in Mars Simulated conditions. Indian Rover Challenge is a part of the Rover Challenge Series (RCS) of The Mars Society.</p>
+      <h1 class="display-4 text-center">International Rover Challenge 2024</h1>
+      <p class="lead">The International Rover Challenge (IRC), organized by the SpaceRobotic Society India, is a prominent event that originated in 2017 under the initial name of the Indian Rover Challenge. Since its inception, this competition has evolved into a leading platform for showcasing advancements in space robotics and engineering capabilities. <br><br>One of the distinctive features of IRC is its commitment to promoting the principles of systems engineering throughout the project life cycle. In the 2024 edition, there is a notable emphasis on creating awareness about the best practices and methods in systems engineering. This strategic focus aims to highlight the holistic approach required in developing a Mars rover, covering aspects from conceptualization and design to construction, testing, and operational deployment.<br><br>The SpaceRobotic Society India plays a pivotal role in orchestrating this event, providing a platform for collaboration, innovation, and knowledge exchange among participants. The society's dedication to fostering interest and expertise in space robotics is evident in the challenging tasks set for the competing teams, encouraging them to push the boundaries of technology and problem-solving.</p>
       <hr class="my-4" style="border-color: #212529">
-      <h2>TASKS</h2>
-
-      <h3>ERDT</h3>
+      
+      <h2>Competition Missions</h2>
+      <h3>Astrobiology Expedition (ABEX)</h3>
       <p>
-          Extreme Retrieval and Delivery Task is the most physically challenging task for rovers on the field, this task requires Rovers to traverse through challenging terrain which includes rocks, steep slopes, obstacles, sandy areas etc. The Rover has to locate and pick up certain tools from a random location on the field and deliver it at specific location to assist astronauts.
+        In this mission, the rover will operate as a mobile science laboratory tasked with collecting samples from designated sites and conducting fundamental scientific assessments using a carefully curated set of tests and experiments. The primary objective is to identify and characterize these sites, evaluating their potential to support microbial life and searching for signs of either extinct or extant life forms.
+        <br><br>
+        The rover may utilize cameras or other passive instruments to explore the designated area and employ mechanical methods to collect samples. It is mandatory for the rover to incorporate at least one life-detection capability instrument or assay, chosen by the team. The samples must be investigated on-site by the rover, and at least one sample must be returned to the base station uncontaminated. Importantly, no laboratory analysis will take place at the base station, and all instruments and tests must be on-board the rover.
+        <br><br>
+        Teams are required to collect scientifically relevant data pertaining to the Martian biosphere. They must choose, collect, and analyze samples from a minimum of two sites. Each selected site must be documented through a wide-angle panorama investigation.
+        <br><br>
+        Upon completing the roving phase, teams must submit their conclusions, analyses, and findings to the judges based on the on-board analysis. This submission should be formatted as a report and include results from on-board rover tests, along with associated data and images.
+        <br><br>
+        One month before the IRC finals, qualified teams will need to present their science plan to the judges in an online format. The presentation date and format details will be communicated to the teams in November.
       </p>
       <hr class="my-4" style="border-color: #212529">
-      <h3>EQUIPMENT SERVICING</h3>
+      <h3>Reconnaissance And Delivery Operation (RDO)</h3>
       <p>
-          In Equipment Servicing Task rovers are required to perform dexterous operations on an equipment control panel for maintenance operations. Some of the operations include tightening screws, turning knobs, typing on keyboards, operating a joystick etc. The objective is to observe the rovers ability to perform intricate operations for assistance on the field.
+        In this mission, rovers are mandated to carry out reconnaissance operations within a terrain not exceeding 500 meters from the base station. The rover's tasks include searching, locating, picking up, and delivering objects to specific locations defined by GPS coordinates. Additionally, the rover may also pick up and store objects during the mission for subsequent delivery to the base station.
+        <br><br>
+Reconnaissance:
+During this stage, the rover is allotted a maximum of 10 minutes to conduct reconnaissance within a designated area, aiming to search and locate various objects scattered around the competition site.
+<br><br>
+Delivery:
+In the subsequent stage, the rover is granted a 20-minute timeframe to execute the pick-up and delivery of objects to predetermined locations. This involves the rover retrieving the designated items and transporting them to their specified destinations within the given time frame.
+      </p><hr class="my-4" style="border-color: #212529">
+      <h3>Autonomous Expedition (AUTEX)</h3>
+      <p>
+        In this mission, rovers are tasked with autonomously traversing moderately rugged terrain between markers. Teams may commence this mission, potentially within 10 minutes after completing the instrument deployment and maintenance mission, starting from the same base station.
+<br><br>
+        Prior to commencing the mission, teams are required to formally declare to the judges their entry into autonomous mode. While in autonomous mode, team members are allowed to monitor video and telemetry information transmitted from the rover but are prohibited from sending any commands. No scouting activities are permitted before the start of this mission.
+        <br><br>
+        The mission entails navigating through multiple arrow signs, all of which are black, sized 30 cm x 20 cm, and elevated 10 - 50 cm off the ground. These arrows, printed on a white background, indicate the direction the rover should follow, leading it to an endpoint marked by an orange traffic cone.
+        <br><br>
+        Each arrow sign is positioned within a circle with a 2-meter radius on the ground. The rover must come to a stop (pause) inside the circle for a minimum of 10 seconds upon detecting a specific arrow sign before proceeding to the next one. At least half of the rover should be within the circle for the required 10 seconds before advancing to the subsequent arrow. If the rover collides with the arrow signs, no points will be awarded for that particular arrow detection.
       </p>
       <hr class="my-4" style="border-color: #212529">
-      <h3>AUTONOMOUS</h3>
-      <p>In Autonomous Task rovers are required to autonomously traverse the field through designated gates with marked directions on the field. There is no tele-operation between the rover and the operator, and the rover must operate as a standalone system. The ability of the on-board system to make locomotive decisions based on available data is greatly tested.</p>
+      <h3>INSTRUMENT DEPLOYMENT AND MAINTENANCE OPERATION (IDMO)</h3>
+      <p>
+        This mission will be divided into two stages: instrument deployment and instrument maintenance. The rover is tasked with traversing a short distance to operate on a mock-up instrument panel, undertaking a precise set of maintenance and deployment operations utilizing robotic manipulators.
+<br><br>
+Instrument Maintenance:
+The first phase involves picking up a cache and moving towards the panel. The cache is equipped with a handle measuring at least 10 cm in length and not exceeding 5 cm in diameter. Additionally, the cache's weight should be less than 5 kg.
+<br><br>
+Deployment:
+The deployment segment of the mission necessitates teams to retrieve and transport sample cache components for deployment in specifically designated locations near the collection panel.</p>
       <hr class="my-4" style="border-color: #212529">
-      <h3>SCIENCE</h3>
-      <p>The primary goal of Science Cache Task is to conduct in-situ analysis of soil samples on the rover to determine possible existence of life on Mars. Rovers are required to dig and collect soil from designated areas, obtain microscopic view of rock samples, collect panoramic images of surroundings in this mission. The rover also conducts tests to check the presence of life supporting gases.</p>
-    <a class="btn btn-lg" style="color:white;background-color:#891f29;" href="https://southasia.marssociety.org/indianroverchallenge/" role="button">Navigate to IRC Site</a>
+      <h3>PROJECT IMPLEMENTATION AND MANAGEMENT ASSESSMENT (PIMA)</h3>
+      <p>The primary aim of the Project Integration and Mission Analysis (PIMA) is to evaluate and scrutinize the overall project and the final design of the rover. PIMA involves a one-to-one interaction between the participating teams and the judges. During this session, teams are required to deliver a presentation to the judges, detailing their rover development process.
+<br><br>
+        The presentation should encompass insights gained throughout the entire life cycle of rover development, with a specific focus on system engineering and management aspects. Teams are expected to cover aspects ranging from the project plan to the manufacturing and testing phases of the rover. Additionally, teams have the option to include any spin-offs that have emerged as a result of their rover project. Importantly, this presentation serves as an opportunity for judges to pose specific questions to the teams, fostering a comprehensive understanding of the project's intricacies.</p>
+      <hr class="my-4" style="border-color: #212529">
+      <h3>BUSINESS AND PARTNERSHIP PLAN (BPP)</h3>
+      <p>The primary goal of the Business Proposal Presentation (BPP) is to assess the team's capacity to cultivate business acumen and promote the establishment of partnerships with both industry and academia. This initiative is designed to encourage teams to actively engage with external entities, fostering collaborations that contribute to the enhancement and successful development of their project. The BPP serves as a platform for teams to showcase not only their technical expertise but also their strategic approach in forming meaningful connections with stakeholders from both the industry and academic sectors.</p>
+    
+  <div style="align-items: center;">
+  <img src="{% static 'images/rover1.jpeg'%}" alt="" height="400px" width="500px">
+  <img src="{% static 'images/rover2.jpeg'%}" alt="" height="400px" width="500px"></div><br>
+  <a class="btn btn-lg" style="color:white;background-color:#891f29;" href="https://www.spaceroboticssociety.org/events/international-rover-challenge/" role="button">Navigate to IRC Site</a>
   </div>
+
   </div>
   </div>
   </div>

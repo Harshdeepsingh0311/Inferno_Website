@@ -31,6 +31,9 @@ def urc(request):
 def irdc(request):
     return render(request,'HOME/irdc.html')
 
+def irc(request):
+    return render(request,'HOME/irc.html')
+
 def project(request):
     return render(request,'HOME/project.html')
 
